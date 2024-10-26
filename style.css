@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./img/Fondo\ web.jpg'); /* Ruta de la imagen o GIF */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 16px;
+    padding: 10px;  /* Asegura espacio en dispositivos pequeños */
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#resultado h2 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+#resultado p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
